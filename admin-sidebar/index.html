@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <title>Tailwind Sidebar</title>
+  <link rel="stylesheet" href="res/styles.css">
+  <script src="res/scripts.js"></script>
+</head>
+<body>
+ <div class="flex flex-row items-center px-5 py-3 font-sans text-mn-gray-200 sm:hidden bg-mn-gray-600">
+    <div class="flex items-center w-full">
+      <img class="w-8 h-8 mx-2" src="res/logo.svg" alt="Logo">
+      <h4 class="text-xl font-bold">workflow</h4>
+    </div>
+    <a onclick="toggleDropdown()" href="#" class="toggle">
+      <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </a>
+ </div>
+ 
+ <!-- dropdown -->
+ <div id="dropdown" class="hidden dropdown-content">
+    <nav>
+        <ul class="block px-8 pt-2 pb-5 text-sm font-medium sm:hidden menu bg-mn-gray-600 text-mn-gray-400">
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                  </svg>
+                </span>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                </span>
+                <span>Team</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+                  </svg>
+                </span>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </span>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
+                  </svg>
+                </span>
+                <span>Documents</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <span>
+                  <svg class="w-5 h-5 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </span>
+                <span>Reports</span>
+              </a>
+            </li>
+        </ul>
+    </nav>
+ </div>
+ <!-- end of dropdown -->
+ 
+ <div class="flex flex-auto h-full mx-auto font-sans">  
+  <div class="relative hidden h-screen pt-8 text-white sm:block sm:w-3/5 md:w-2/5 lg:w-2/6 bg-mn-gray-600">
+    <div class="flex mx-3 mb-5">
+      <img class="w-10 h-10 mx-2" src="res/logo.svg" alt="Logo">
+      <h4 class="text-2xl font-bold">workflow</h4>
+    </div>
+    <div>
+      <ul>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Dashboard</h4>
+        </li>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Team</h4>
+        </li>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Projects</h4>
+        </li>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Calendar</h4>
+        </li>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Documents</h4>
+        </li>
+        <li class="flex items-center px-3 py-2 mx-3 mx-4 mb-1 font-normal hover:bg-mn-gray-700 rounded-md">
+          <svg class="w-6 h-6 mr-3 text-mn-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <h4 class="w-full text-sm font-semibold hover:text-mn-gray-100 text-mn-gray-300">Reports</h4>
+        </li>
+      </ul>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 flex flex-row items-center px-4 py-5 bg-mn-gray-500">
+      <img class="w-10 mr-4 rounded-full" src="res/profile.jpg" alt="profile">
+      <div class="flex flex-col">
+        <span class="text-sm font-semibold">Tom Cook</span>
+        <a class="text-xs font-medium text-mn-gray-400 hover:text-mn-gray-300" href="#">View profile</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-screen p-8 bg-mn-gray-100">
+    <h3 class="mb-5 text-2xl font-semibold">Dashboard</h3>
+    <div class="block w-full h-64 border-4 border-dashed rounded-lg border-mn-gray-200"></div>
+  </div>
+ </div>
+</body>
+</html>
