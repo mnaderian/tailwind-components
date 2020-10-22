@@ -1,6 +1,6 @@
 # MN Tailwind Components
-Tailwind CSS components developed for the convinience of me and everybody else.
-
+Tailwind CSS components developed for the convinience of everyone. Let's add our Tailwind Components here!
+  
 ## Development  
 The components in this repo are under development and once a component is finished it will be added to the repository.
 
