@@ -4,7 +4,7 @@
   "description": "A pack of Tailwind CSS components ready to be used in any project.",
   "main": "index.js",
   "dependencies": {
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {},
   "scripts": {
