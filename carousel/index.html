@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel using Slick</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="w-1/2 relative mx-auto items-center h-screen flex">
+    <div class="carousel w-full mx-auto relative overflow-hidden rounded-2xl shadow-xl">
+
+      <!-- Slides -->
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="img/01.jpg" alt="img">
+        <p class="text-white absolute z-10 font-sans bottom-5 bg-black bg-opacity-50 px-3 py-1 inset-x-0 font-semibold">Title #1</p>
+      </div>
+      
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="img/02.jpg" alt="img">
+        <p class="text-white absolute z-10 font-sans bottom-5 bg-black bg-opacity-50 px-3 py-1 inset-x-0 font-semibold">Title #2</p>
+      </div>
+
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="img/03.jpg" alt="img">
+        <p class="text-white absolute z-10 font-sans bottom-5 bg-black bg-opacity-50 px-3 py-1 inset-x-0 font-semibold">Title #3</p>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <div id="arrows" class="z-10 text-white">
+      <svg id="previous-arrow" class="absolute w-7 h-7 left-3 bg-black bg-opacity-20 rounded-full p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+      <svg id="next-arrow" class="absolute w-7 h-7 right-3 bg-black bg-opacity-20 rounded-full p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+    </div>
+
+  </div>
+
+  <!-- scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').slick({
+        nextArrow: '#next-arrow',
+        prevArrow: '#previous-arrow'
+      });
+    });
+  </script>
+
+</body>
+</html>
