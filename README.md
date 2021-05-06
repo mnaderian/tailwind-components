@@ -1,4 +1,4 @@
-# MN Tailwind Components
+# Tailwind Components
 Tailwind CSS components developed for the convinience of everyone. Let's add our Tailwind Components here!
   
 ## Development  
