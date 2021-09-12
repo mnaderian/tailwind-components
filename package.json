@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "A pack of Tailwind CSS components ready to be used in any project.",
   "main": "index.js",
-  "dependencies": {
-    "tailwindcss": "^1.9.6"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mnaderian/tailwind-components.git"
@@ -24,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/mnaderian/tailwind-components/issues"
   },
-  "homepage": "https://github.com/mnaderian/tailwind-components#readme"
+  "homepage": "https://github.com/mnaderian/tailwind-components#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
 }
