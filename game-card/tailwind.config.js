@@ -9,7 +9,10 @@ module.exports = {
       },
       width: {
         'card-fixed': '470px',
-      }
+      },
+      fontFamily: {
+        'nunito': ['Nunito', 'sans-serif'],
+      },
     },
   },
   variants: {},
