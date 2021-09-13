@@ -10,8 +10,7 @@ module.exports = {
         'blueGray': colors.blueGray,
       },
       fontFamily: {
-        'glory': ['Glory', 'sans-serif'],
-        'merriweather': ['Merriweather', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
       }
     },
   },
