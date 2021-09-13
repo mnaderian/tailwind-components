@@ -2,7 +2,11 @@ module.exports = {
   mode: 'jit',
   purge: ['*.html'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        'nunito': ['Nunito', 'sans-serif'],
+      },
+    },
   },
   variants: {},
   plugins: []
