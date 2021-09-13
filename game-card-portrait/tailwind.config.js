@@ -7,7 +7,10 @@ module.exports = {
         'mn-yellow': '#E9BC2F',
         'mn-orange': '#FA6A34',
           'mn-gray': '#555452',
-      }
+      },
+      fontFamily: {
+        'nunito': ['Nunito', 'sans-serif'],
+      },
     },
   },
   variants: {},
