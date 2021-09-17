@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Components: product-2</title>
+  <link rel="stylesheet" href="res/css/styles.css">
+</head>
+<body class="bg-gray-100 grid place-items-center h-screen">
+
+  <!-- Tailwind CSS Component: product-2 -->
+  <div class="flex shadow-lg rounded-xl font-nunito overflow-hidden mx-5">
+    <!-- left side (picture) -->
+    <div class="hidden | sm:block w-52">
+      <img class="w-full h-full object-cover" src="res/img/amsterdam.jpg" alt="Amsterdam">
+    </div>
+    <!-- right side (info) -->
+    <div>
+      <!-- top -->
+      <div class="bg-white px-6 py-5">
+        <h3 class="text-gray-800 font-bold text-lg mb-1">Amsterdam Walking Tour</h3>
+        <p class="text-gray-500 text-sm">
+          Explore popular tourist destinations as well as hidden local favorites.
+        </p>
+      </div>
+      <!-- bottom -->
+      <div class="bg-gray-50 px-6 py-5 relative">
+        <!-- booking button -->
+        <button class="absolute mx-6 my-5 px-4 py-2 font-semibold top-0 right-0 rounded shadow bg-purple-600 text-white hover:bg-purple-500 transition">Book now</button>
+        <!-- price -->
+        <div class="mb-2">
+          <span class="font-bold text-gray-800 text-2xl">$17</span>
+          <span class="text-gray-500 text-xs font-semibold">per person*</span>
+        </div>
+        <!-- stars -->
+        <div class="mb-5 flex space-x-1 items-center text-xs">
+          <div class="text-green-600 flex flex-row">
+            <!-- star 1 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <!-- star 2 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <!-- star 3 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <!-- star 4 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <!-- star 5 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <span class="text-gray-500 text-xs">28 reviews</span>
+        </div>
+        <!-- description -->
+        <div class="text-gray-500 text-xs">
+          * Prices may vary depending on selected date.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
