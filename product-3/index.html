@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Components: product-3</title>
+  <link rel="stylesheet" href="res/css/styles.css">
+</head>
+<body class="bg-gray-100 grid place-items-center h-screen">
+
+  <!-- Tailwind Component: product-3 -->
+  <div class="bg-white font-nunito rounded-2xl shadow-xl w-96 min-h-[350px] overflow-hidden">
+    <!-- product image -->
+    <div class="w-full h-48">
+      <img class="w-full h-full object-cover" src="res/img/product.jpg" alt="product">
+    </div>
+    <!-- details -->
+    <div class="relative px-6 py-4">
+      <!-- stats button -->
+      <button class="font-bold text-sm text-sky-600 border-2 border-gray-200 rounded px-3 py-1 absolute top-4 right-6">View Stats</button>
+      <!-- title -->
+      <h3 class="font-bold text-gray-700 text-lg mb-1">Living Room Chair</h3>
+      <!-- price -->
+      <span class="font-extrabold text-sky-600 text-2xl">
+        <span class="text-gray-400 -mr-1">$</span>
+        <span>250.00</span>
+      </span>
+      <hr class="my-5">
+      <!-- description -->
+      <div class="text-sm text-gray-600 leading-snug mb-5">
+        Looking to sell this living room chair as pictured, in excellent condition...
+      </div>
+      <!-- date and author -->
+      <div class="text-xs text-gray-400 font-semibold mb-7">
+        Posted 12 hrs ago &#9679; Kitchener, ON
+      </div>
+      <!-- buttons -->
+      <div class="flex space-x-3 items-center font-semibold text-sm">
+        <button class="bg-sky-700 text-white rounded px-3 py-1 hover:bg-sky-600 transition cursor-default">Manage Listing</button>
+        <a href="#" class="text-gray-600 hover:underline">Unpublish</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
