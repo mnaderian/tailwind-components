@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Components: social-1</title>
+    <link rel="stylesheet" href="res/css/styles.css">
+</head>
+<body class="bg-gray-100 grid place-items-center h-screen">
+    
+    <!-- Tailwind CSS Component: social-1 -->
+    <div class="bg-white rounded-xl shadow-xl m-5 w-96 min-h-[250px] overflow-hidden font-nunito">
+        <!-- timeline -->
+        <div class="h-36 relative">
+            <!-- wall image -->
+            <img class="w-full h-full object-cover" src="res/img/timeline.jpg" alt="timeline">
+            <!-- profile -->
+            <img class="w-24 h-24 object-cover border-4 border-white rounded-full absolute -bottom-12 left-8" src="res/img/profile.jpg" alt="profile">
+        </div>
+        <!-- user info -->
+        <div class="pl-36 py-2 pr-5">
+            <!-- name -->
+            <h3 class="text-xl font-extrabold text-gray-800 mb-1">Sarah Singer</h3>
+            <!-- location -->
+            <div class="flex text-gray-400 items-center text-xs font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>New York, NY</span>
+            </div>
+        </div>
+        <!-- buttons -->
+        <div class="flex items-center py-5 px-7 justify-between border-b-2 border-gray-200">
+            <button class="btn btn-blue">Follow</button>
+            <button class="btn btn-white">Message</button>
+        </div>
+        <!-- followers -->
+        <div class="py-3 px-5 bg-gray-50">
+            <!-- count -->
+            <div class="text-xs flex items-center space-x-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="font-extrabold text-gray-600">12</span>
+                <span class="font-semibold text-gray-400">Followers you know</span>
+            </div>
+            <!-- profiles -->
+            <div class="flex items-center">
+                <div class="overflow-hidden flex flex-nowrap items-center -space-x-2">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[9]" src="res/img/user-1.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[8]" src="res/img/user-2.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[7]" src="res/img/user-3.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[6]" src="res/img/user-4.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[5]" src="res/img/user-5.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[4]" src="res/img/user-6.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[3]" src="res/img/user-7.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[2]" src="res/img/user-8.jpg">
+                    <img class="w-9 h-9 rounded-full border-4 border-gray-50 relative z-[1]" src="res/img/user-9.jpg">
+                </div>
+                <div class="ring-2 ring-gray-300 ring-inset rounded-full text-xs text-gray-500 font-extrabold p-1 w-8 h-8 grid place-items-center ml-2">+3</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

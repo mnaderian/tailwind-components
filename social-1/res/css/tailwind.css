@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply font-bold text-sm rounded-full shadow-lg py-2 w-1/2 mx-2 transition;
+    }
+
+    .btn-blue {
+        @apply bg-sky-600 text-white hover:bg-sky-500;
+    }
+
+    .btn-white {
+        @apply ring-2 ring-yellow-400 ring-inset hover:ring-0 text-yellow-500 hover:bg-yellow-500 hover:text-white;
+    }
+}
