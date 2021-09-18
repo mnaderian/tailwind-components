@@ -6,3 +6,6 @@ The components in this repo are under development and once a component is finish
 
 ## Contribution  
 Everyone is welcome to add his component as a PR.
+
+## Catalogue  
+Coming Soon...
